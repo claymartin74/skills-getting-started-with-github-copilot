@@ -158,9 +158,9 @@ footer {
 }
 
 .participants ul {
-  list-style: disc inside;
+  list-style: none; /* hide default bullets */
   margin: 0;
-  padding-left: 14px;
+  padding-left: 0;
   max-height: 120px;
   overflow: auto;
 }
@@ -179,4 +179,36 @@ footer {
 .muted {
   color: #7a7f86;
   font-style: italic;
+}
+
+/* Delete icon/button next to each participant */
+.participant-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-email {
+  word-break: break-all;
+  flex: 1 1 auto;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  color: #9a1e1e;
+}
+
+.delete-btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: default;
 }
