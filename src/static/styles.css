@@ -142,3 +142,41 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #f1f5ff;
+  border: 1px solid #e3e8ff;
+  border-radius: 6px;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+}
+
+.participants ul {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 14px;
+  max-height: 120px;
+  overflow: auto;
+}
+
+.participants li {
+  padding: 4px 0;
+  font-size: 14px;
+  color: #30343a;
+  border-bottom: 1px dashed rgba(0,0,0,0.04);
+}
+
+.participants li:last-child {
+  border-bottom: none;
+}
+
+.muted {
+  color: #7a7f86;
+  font-style: italic;
+}
